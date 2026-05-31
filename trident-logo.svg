@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" role="img" aria-labelledby="title desc">
+  <title id="title">Trident Joinery Services logo</title>
+  <desc id="desc">A premium joinery logo with a trident-inspired timber mark and Trident Joinery Services wordmark.</desc>
+  <defs>
+    <linearGradient id="oak" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#c9914a"/>
+      <stop offset="1" stop-color="#7b4f23"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" fill="#24282a"/>
+  <path fill="url(#oak)" d="M64 18 84 43H71v33h28L64 111 29 76h28V43H44L64 18Z"/>
+  <path fill="#dcecf0" d="M61 39h6v46h-6z"/>
+  <path fill="#dcecf0" d="M39 72h50v6H39z"/>
+  <path fill="#dcecf0" d="m44 54 5-4 15 18 15-18 5 4-20 24-20-24Z"/>
+  <text x="154" y="56" fill="#151312" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="0">Trident Joinery</text>
+  <text x="156" y="86" fill="#7b4f23" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="0">STAIRCASE REFURBISHMENT SPECIALISTS</text>
+  <text x="156" y="108" fill="#6f6861" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="0">Oak, glass and bespoke joinery</text>
+</svg>

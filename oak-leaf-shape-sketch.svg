@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Oak leaf silhouette sketch</title>
+  <desc id="desc">A plain black shadow sketch of an oak leaf shape with rounded scalloped lobes, a diagonal stem and broad leaf blade.</desc>
+  <rect width="640" height="420" fill="#f7f4ef"/>
+  <path fill="#111111" d="M72 348c-4-7-2-16 5-20l83-54 13 20-84 54c-6 4-13 4-17 0Z"/>
+  <path fill="#111111" d="
+    M156 280
+    C137 263 130 239 143 221
+    C112 222 92 205 94 181
+    C97 155 122 143 153 154
+    C133 124 139 93 162 81
+    C185 69 210 84 222 118
+    C225 79 251 52 282 56
+    C312 60 327 88 317 125
+    C349 95 388 91 411 116
+    C433 140 420 173 383 190
+    C425 190 458 211 463 242
+    C468 271 441 293 400 289
+    C426 317 429 350 404 366
+    C381 382 350 368 333 333
+    C326 369 299 391 270 383
+    C242 375 232 344 246 309
+    C217 327 185 326 169 305
+    C157 290 156 280 156 280
+    Z"/>
+  <path fill="#f7f4ef" fill-opacity=".9" d="
+    M155 282
+    C217 239 279 194 345 143
+    C350 139 357 140 360 145
+    C363 150 361 156 356 160
+    C288 211 225 257 162 299
+    Z"/>
+  <path fill="#f7f4ef" fill-opacity=".9" d="M237 229c-33-2-58-11-75-28l8-8c18 17 45 25 80 24l-13 12Z"/>
+  <path fill="#f7f4ef" fill-opacity=".9" d="M294 188c-28-13-47-31-56-54l11-4c9 22 28 39 58 50l-13 8Z"/>
+  <path fill="#f7f4ef" fill-opacity=".9" d="M287 193c24 2 49-4 75-20l5 10c-29 17-58 24-86 21l6-11Z"/>
+  <path fill="#f7f4ef" fill-opacity=".9" d="M223 239c20 13 45 20 76 21l-1 11c-34-1-63-9-86-25l11-7Z"/>
+</svg>
