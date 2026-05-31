@@ -387,10 +387,23 @@ figcaption {
 }
 
 .contact-methods a {
-  padding: 12px 14px;
+  display: grid;
+  gap: 3px;
+  min-width: 190px;
+  padding: 13px 14px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--white);
-  font-weight: 800;
+}
+
+.contact-methods strong {
+  font-size: 0.96rem;
+  line-height: 1.1;
+}
+
+.contact-methods span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.82rem;
+  line-height: 1.25;
 }
 
 .quote-card {
