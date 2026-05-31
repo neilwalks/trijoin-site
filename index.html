@@ -165,36 +165,53 @@
           <h2>Practical joinery for the rest of the home.</h2>
         </div>
         <div class="support-grid">
-          <article>
+          <article class="support-card" data-gallery="stair-refurbishment" role="button" tabindex="0" aria-label="Open Stair Refurbishment gallery">
             <h3>Stair Refurbishment</h3>
             <p>Traditional staircase repairs, replacement parts, cladding, handrails, spindles and practical upgrades alongside the oak and glass work.</p>
+            <span>View gallery</span>
           </article>
-          <article>
+          <article class="support-card" data-gallery="under-stair-storage" role="button" tabindex="0" aria-label="Open Under-Stair Storage gallery">
             <h3>Under-Stair Storage</h3>
             <p>Made-to-measure cupboards, pull-out storage and neat timber solutions that turn awkward under-stair space into useful storage.</p>
+            <span>View gallery</span>
           </article>
-          <article>
+          <article class="support-card" data-gallery="door-hanging" role="button" tabindex="0" aria-label="Open Door Hanging gallery">
             <h3>Door Hanging</h3>
             <p>Internal door fitting, replacement doors, ironmongery, handles and clean finishing for homes and renovation projects.</p>
+            <span>View gallery</span>
           </article>
-          <article>
+          <article class="support-card" data-gallery="loft-storage-access" role="button" tabindex="0" aria-label="Open Loft Storage and Access gallery">
             <h3>Loft Storage & Access</h3>
             <p>Loft hatches, access upgrades, timber loft entrance details and practical storage solutions fitted neatly into the property.</p>
+            <span>View gallery</span>
           </article>
-          <article>
+          <article class="support-card" data-gallery="kitchen-fitting" role="button" tabindex="0" aria-label="Open Kitchen Fitting gallery">
             <h3>Kitchen Fitting</h3>
             <p>Kitchen installation, finishing joinery, panels, trims and practical fitting work for home improvement projects.</p>
+            <span>View gallery</span>
           </article>
-          <article>
+          <article class="support-card" data-gallery="driveway-gates" role="button" tabindex="0" aria-label="Open Driveway Gates gallery">
             <h3>Driveway Gates</h3>
             <p>Timber driveway gates, side gates and practical external joinery built to suit the property and fitted with tidy, reliable hardware.</p>
+            <span>View gallery</span>
           </article>
-          <article>
+          <article class="support-card" data-gallery="other-joinery" role="button" tabindex="0" aria-label="Open Other Joinery gallery">
             <h3>Other Joinery</h3>
             <p>Skirting, architraves, cabinetry, timber feature work and renovation joinery for residential and commercial customers.</p>
+            <span>View gallery</span>
           </article>
         </div>
       </section>
+
+      <div class="service-modal" id="service-gallery-modal" hidden>
+        <div class="service-modal-backdrop" data-close-gallery></div>
+        <div class="service-modal-panel" role="dialog" aria-modal="true" aria-labelledby="service-gallery-title">
+          <button class="modal-close" type="button" data-close-gallery>Close</button>
+          <p class="section-kicker">Project gallery</p>
+          <h2 id="service-gallery-title">Project photos</h2>
+          <div class="service-gallery-grid" id="service-gallery-grid"></div>
+        </div>
+      </div>
 
       <section id="contact" class="contact-section">
         <div class="contact-copy">
@@ -238,5 +255,127 @@
       </div>
       <p>Oak staircases, glass balustrades, stair refurbishment, under-stair storage, door hanging, loft storage, kitchen fitting, driveway gates and bespoke joinery across Wirral, Liverpool, Cheshire and North Wales.</p>
     </footer>
+    <script>
+      const serviceGalleries = {
+        "stair-refurbishment": {
+          title: "Stair Refurbishment",
+          images: [
+            ["gallery/services/stair-new-timber-1.jpg", "New timber staircase and balustrade frame taking shape"],
+            ["gallery/services/stair-new-timber-2.jpg", "Timber staircase fitted during a full refurbishment"],
+            ["gallery/services/stair-refurb-opened-up.jpg", "Staircase stripped back and ready for refurbishment"],
+            ["gallery/services/stair-refurb-fitted-1.jpg", "New timber handrail, spindles and stair finish"],
+            ["gallery/services/stair-refurb-rails-1.jpg", "Traditional staircase refurbishment with timber rails"]
+          ]
+        },
+        "under-stair-storage": {
+          title: "Under-Stair Storage",
+          images: [
+            ["gallery/services/stair-under-storage-1.jpg", "Under-stair storage built beneath the staircase"],
+            ["gallery/services/stair-under-storage-2.jpg", "Made-to-measure under-stair cupboards"],
+            ["gallery/services/stair-under-storage-doors.jpg", "Under-stair cupboard doors fitted into the stair line"],
+            ["gallery/services/stair-under-storage-finish.jpg", "Finished under-stair storage with clean panel detail"],
+            ["gallery/services/stair-under-storage-room.jpg", "Stair refurbishment and storage fitted into the room"]
+          ]
+        },
+        "door-hanging": {
+          title: "Door Hanging",
+          images: [
+            ["gallery/services/door-oak-glazed-pair.jpg", "Oak glazed double doors fitted neatly into the opening"],
+            ["gallery/services/door-glazed-pair-fitted.jpg", "Finished glazed doors and trim detail"],
+            ["gallery/services/door-external-front.jpg", "External timber door and frame detail"],
+            ["gallery/services/door-internal-painted.jpg", "Internal painted door and frame finish"],
+            ["gallery/services/door-oak-detail.jpg", "Oak door detail with clean hardware finish"]
+          ]
+        },
+        "loft-storage-access": {
+          title: "Loft Storage & Access",
+          images: [
+            ["gallery/services/loft-boarded-storage.jpg", "Boarded loft space for practical storage"],
+            ["gallery/services/loft-ladder-access-1.jpg", "Loft access ladder fitted from the landing"],
+            ["gallery/services/loft-ladder-access-2.jpg", "Loft hatch and ladder access opened up"],
+            ["gallery/services/loft-hatch-open.jpg", "Open loft hatch with access ladder"],
+            ["gallery/services/loft-roof-work.jpg", "Loft and roof access joinery in progress"]
+          ]
+        },
+        "kitchen-fitting": {
+          title: "Kitchen Fitting",
+          images: [
+            ["gallery/services/kitchen-fitted-1.jpg", "Kitchen fitting with cabinets, worktops, tiling and lighting"],
+            ["gallery/services/kitchen-fitted-2.jpg", "Fitted kitchen with timber cabinet finish"],
+            ["gallery/services/kitchen-install-1.jpg", "Kitchen installation in progress"],
+            ["gallery/services/kitchen-install-2.jpg", "Kitchen units and worktops being fitted"],
+            ["gallery/services/kitchen-finished-grey.jpg", "Finished grey kitchen with clean joinery detail"],
+            ["gallery/services/kitchen-utility-finish.jpg", "Utility and kitchen cabinetry finish"]
+          ]
+        },
+        "driveway-gates": {
+          title: "Driveway Gates",
+          images: [
+            ["gallery/services/gate-side-timber.jpg", "Side gate fitted in timber"],
+            ["gallery/services/gate-driveway-1.jpg", "Timber driveway gates fitted between brickwork"],
+            ["gallery/services/gate-driveway-2.jpg", "Driveway gates with black ironmongery"],
+            ["gallery/services/gate-driveway-wide.jpg", "Wide timber driveway gate installation"],
+            ["gallery/services/gate-driveway-front.jpg", "Finished driveway gate from the front"],
+            ["gallery/services/decking-finished.jpg", "External timber decking and joinery finish"]
+          ]
+        },
+        "other-joinery": {
+          title: "Other Joinery",
+          images: [
+            ["gallery/services/joinery-media-wall-1.jpg", "Bespoke fitted media wall and shelving"],
+            ["gallery/services/joinery-media-wall-2.jpg", "Painted storage and display joinery"],
+            ["gallery/services/joinery-media-wall-3.jpg", "Fitted cabinetry with cupboards and open shelves"],
+            ["gallery/services/joinery-shelving.jpg", "Built-in shelving fitted into the room"],
+            ["gallery/services/joinery-cabinet-doors.jpg", "Made-to-measure storage cabinet with doors"],
+            ["gallery/services/joinery-desk-storage.jpg", "Desk and storage joinery fitted into the space"],
+            ["gallery/services/joinery-workshop-router.jpg", "Workshop detail during timber preparation"],
+            ["gallery/services/joinery-workshop-cutting.jpg", "Timber cutting and finishing work in progress"]
+          ]
+        }
+      };
+
+      const modal = document.getElementById("service-gallery-modal");
+      const modalTitle = document.getElementById("service-gallery-title");
+      const modalGrid = document.getElementById("service-gallery-grid");
+      const closeButton = modal.querySelector(".modal-close");
+
+      function openGallery(key) {
+        const gallery = serviceGalleries[key];
+        if (!gallery) return;
+        modalTitle.textContent = gallery.title;
+        modalGrid.innerHTML = gallery.images.map(([src, caption]) => `
+          <figure>
+            <img src="${src}" alt="${caption}">
+            <figcaption>${caption}</figcaption>
+          </figure>
+        `).join("");
+        modal.hidden = false;
+        document.body.classList.add("modal-open");
+        closeButton.focus();
+      }
+
+      function closeGallery() {
+        modal.hidden = true;
+        document.body.classList.remove("modal-open");
+      }
+
+      document.querySelectorAll("[data-gallery]").forEach((card) => {
+        card.addEventListener("click", () => openGallery(card.dataset.gallery));
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openGallery(card.dataset.gallery);
+          }
+        });
+      });
+
+      document.querySelectorAll("[data-close-gallery]").forEach((control) => {
+        control.addEventListener("click", closeGallery);
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !modal.hidden) closeGallery();
+      });
+    </script>
   </body>
 </html>
