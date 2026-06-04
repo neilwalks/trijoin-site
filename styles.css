@@ -32,6 +32,13 @@ a {
   text-decoration: none;
 }
 
+.text-link {
+  color: var(--oak-deep);
+  font-weight: 850;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -314,6 +321,11 @@ figure img,
   aspect-ratio: 4 / 5;
   object-fit: cover;
   background: var(--charcoal);
+}
+
+.renovation-gallery figure img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .gallery-placeholder {
